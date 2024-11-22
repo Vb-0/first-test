@@ -13,7 +13,7 @@ html, body {
     }
     }
 .container {
-    max-width: 1630px;
+    min-width: 1630px;
     margin: 0px auto;
     font-family: Manrope, sans-serif;
     padding: 20px;
