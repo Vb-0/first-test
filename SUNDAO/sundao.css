@@ -245,9 +245,10 @@ span {
     align-items: center;
     flex-direction: column; */
     color: #FFFFFF;
-    background-image: url(./img/bg__3.png);
+    background-image: url(./img/sun.png), url(./img/bg__3.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: auto;
     
 }
@@ -334,7 +335,7 @@ span {
 
 .row_3 {
     text-align: center;
-
+    background: linear-gradient(93.31deg, rgba(66, 4, 60, 0.5) 6.66%, rgba(252, 128, 36, 0.5) 107.35%);
     border: 1px solid #FFFFFF;
 }
 
@@ -471,16 +472,24 @@ span {
     text-align: center;
     padding: 212px 0px 84px;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
-.square__d>h3 {
+.square__d>div>h3 {
     font-size: 40px;
     font-weight: 400;
     margin: 0;
 }
-.square__d>h1 {
+.square__d>div>h1 {
     font-size: 64px;
     font-weight: 400;
     margin: 0;
+}
+.square__d>div img {
+    width: 270px;
+    display: block;
+    margin-left: auto;
 }
 
 .footer {
@@ -593,7 +602,10 @@ span {
         row-gap: 35px;
         
     }
-
+    .square__d {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
     .text {
         padding: 0;
     }
@@ -634,7 +646,7 @@ span {
 
     .square__c>div {
         flex-wrap: wrap;
-        gap: 30px 64px;
+        row-gap: 30px;
     }
 
     .square__c>div>img {
